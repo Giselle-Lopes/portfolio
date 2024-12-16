@@ -1,0 +1,41 @@
+#title span {
+    animation: displayText 9s infinite;
+    animation-delay: calc(-3s * var(--i));
+}
+
+#title span::before {
+    content: attr(data-Text);
+    filter: drop-shadow(0 0 25px #edfe01);
+    animation: animate 3s linear infinite;
+}
+
+.star {
+text-shadow: white 1px 5px 10px;
+animation-name: fall;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+@keyframes displayText {
+    0% {
+        display: inline-block;
+    }
+    33.33%,100% {
+        display: none;
+    }
+}
+
+@keyframes animate{
+    0%,10%,100% {
+        width: 0;
+    }
+    70%,90% {
+        width: 100%;
+    }
+}
+
+@keyframes fall {
+to {
+    transform: translateY(100vh);
+}
+}
