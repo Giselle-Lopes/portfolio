@@ -10,10 +10,10 @@
 }
 
 .star {
-text-shadow: white 1px 5px 10px;
-animation-name: fall;
-animation-timing-function: linear;
-animation-iteration-count: infinite;
+    text-shadow: white 1px 5px 10px;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 @keyframes displayText {
@@ -35,7 +35,7 @@ animation-iteration-count: infinite;
 }
 
 @keyframes fall {
-to {
-    transform: translateY(100vh);
-}
+    to {
+        transform: translateY(100vh);
+    }
 }
