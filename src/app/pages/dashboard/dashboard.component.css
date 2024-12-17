@@ -5,12 +5,10 @@
 
 #title span::before {
     content: attr(data-Text);
-    filter: drop-shadow(0 0 25px #edfe01);
     animation: animate 3s linear infinite;
 }
 
 .star {
-    text-shadow: white 1px 5px 10px;
     animation-name: fall;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
