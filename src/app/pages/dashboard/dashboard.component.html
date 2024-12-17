@@ -13,7 +13,7 @@
         <div class="flex flex-col gap-8 justify-center items-center">
           <p class="dark:text-white text-justify font-mono cursor-default w-[500px]">Welcome to my portfolio, here you will find a couple of challenges made along with <a>ICodeThis</a>, and also little projects created to practice and learn new frameworks. I hope you appreciate the work you will find here, thanks for taking a look!</p>
           <div class="flex flex-row justify-between w-[500px]">
-            <button class="dark:text-black text-white dark:hover:text-[#F2E205] hover:text-[#F229C3] dark:bg-[#F2E205] bg-[#F229C3] dark:hover:bg-black hover:bg-white dark:border-[#F2E205] border-[#F229C3] border-solid border-4 px-3 py-2 rounded-lg font-mono font-semibold">Challenges</button>
+            <a [routerLink]="['/challenges']" class="dark:text-black text-white dark:hover:text-[#F2E205] hover:text-[#F229C3] dark:bg-[#F2E205] bg-[#F229C3] dark:hover:bg-black hover:bg-white dark:border-[#F2E205] border-[#F229C3] border-solid border-4 px-3 py-2 rounded-lg font-mono font-semibold">Challenges</a>
             <a href="https://leetcode.com/u/GiselleLopes/" target="_blank" class="flex flex-row dark:text-white dark:hover:text-[#F2E205] hover:text-[#F229C3] hover:underline transform transition duration-300 font-mono font-semibold px-3 py-2 gap-2">
               <img src="/assets/icons/leetcode.svg" alt="LeetCode icon" class="dark:bg-[#F2E205] bg-[#F229C3] p-1 rounded-full w-8 h-8"/>
               <p class="mt-1">LeetCode</p>
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="fixed z-[9] top-0 left-0 w-full h-full bg-transparent overflow-hidden">
-        <div *ngFor="let star of stars" class="star drop-shadow-custom-pink-star dark:text-white text-[#F229C3] z-[9] text-[20px] absolute top-[-20px]" 
+        <div *ngFor="let star of stars" class="star drop-shadow-custom-pink-star dark:drop-shadow-custom-white dark:text-white text-[#F229C3] z-[9] text-[20px] absolute top-[-20px]" 
           [style.left]="star.left + '%'" 
           [style.animationDuration]="star.duration + 's'" 
         >

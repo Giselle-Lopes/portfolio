@@ -1,6 +1,6 @@
 <nav class="flex justify-between p-[1em] border-b-[1px] border-solid dark:border-[#F2E205] border-[#F229C3] dark:bg-black">
-    <img src="/assets/icons/logo-pink-star.svg" alt="Logo pink" width="40" class="dark:hidden flex">
-    <img src="/assets/icons/logo-yellow-star.svg" alt="Logo Yellow" width="40" class="dark:flex hidden">
+    <img [routerLink]="['/']" src="/assets/icons/logo-pink-star.svg" alt="Logo pink" width="40" class="dark:hidden flex cursor-pointer">
+    <img [routerLink]="['/']" src="/assets/icons/logo-yellow-star.svg" alt="Logo Yellow" width="40" class="dark:flex hidden cursor-pointer">
     <div (click)="toggleTheme()" class="z-[999] bg-white dark:bg-gray-500 shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] w-14 h-7 flex items-center px-1 rounded-2xl transition-all duration-300 cursor-pointer" [ngClass]="isDark ? 'justify-start' : 'justify-end'">
         <div class="bg-[#F229C3] dark:bg-black h-5 w-5 rounded-xl flex justify-center items-center cursor-pointer">
             <i class="pi pi-sun flex dark:hidden" style="color: white"></i>
