@@ -1,0 +1,41 @@
+:host {
+    --bg-display: rgb(120, 144, 156);
+    --bg-body: #D7DFE2;
+}
+    
+#body {
+    background-color: var(--bg-body);
+}
+
+#display {
+    background-color: var(--bg-display);
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    color: rgb(68, 92, 104);
+}
+
+#equal:hover {
+    transition: transform .5s ease;
+    transform: scale(1.2);
+    box-shadow: rgba(255, 0, 0, 0.25) 0px 14px 28px,
+        rgba(255, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.confetti {
+    position: absolute;
+    animation: confetti-fall linear 5s infinite;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100%) rotate(0);
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(180deg);
+    }
+}
+    

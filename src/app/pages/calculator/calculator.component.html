@@ -1,0 +1,31 @@
+<div class="flex justify-center items-center h-screen overflow-hidden" id="body">
+    <div class="shadow-custom">
+        <div id="display" class="h-[100px] w-[205px] p-[10px]">
+        <input id="calculation" class="text-white opacity-40 cursor-default bg-transparent w-[185px] mb-[10px] text-end" [(ngModel)]="calculationDisplay" readonly>
+        <input id="result" class="text-white cursor-default bg-transparent w-[185px] text-[30px] text-end" [(ngModel)]="resultDisplay" readonly>
+        </div>
+        <div class="bg-[#D7DFE2]" id="calculator-buttons" class="grid grid-cols-4 auto-cols-auto gap-[1px]">
+        <button id="actions" class="bg-[rgb(228,233,236)] hover:bg-[rgba(228,233,236,0.183)] active:bg-[rgba(120,144,156,0.525)]" (click)="clearDisplay()">C</button>
+        <button id="actions" class="bg-[rgb(228,233,236)] hover:bg-[rgba(228,233,236,0.183)] active:bg-[rgba(120,144,156,0.525)]" (click)="deleteOne()">DEL</button>
+        <button id="actions" class="bg-[rgb(228,233,236)] hover:bg-[rgba(228,233,236,0.183)] active:bg-[rgba(120,144,156,0.525)]" (click)="addToDisplay('(')">(</button>
+        <button id="actions" class="bg-[rgb(228,233,236)] hover:bg-[rgba(228,233,236,0.183)] active:bg-[rgba(120,144,156,0.525)]" (click)="addToDisplay(')')">)</button>
+        <button class=" bg-white hover:bg-[rgba(255,255,255,0.801)] active:bg-[rgba(120,144,156,0.128)]" id="main-area" (click)="addToDisplay('7')">7</button>
+        <button class=" bg-white hover:bg-[rgba(255,255,255,0.801)] active:bg-[rgba(120,144,156,0.128)]" id="main-area" (click)="addToDisplay('8')">8</button>
+        <button class=" bg-white hover:bg-[rgba(255,255,255,0.801)] active:bg-[rgba(120,144,156,0.128)]" id="main-area" (click)="addToDisplay('9')">9</button>
+        <button id="actions" class="bg-[rgb(228,233,236)] hover:bg-[rgba(228,233,236,0.183)] active:bg-[rgba(120,144,156,0.525)]" (click)="addToDisplay('/')">/</button>
+        <button class=" bg-white hover:bg-[rgba(255,255,255,0.801)] active:bg-[rgba(120,144,156,0.128)]" id="main-area" (click)="addToDisplay('4')">4</button>
+        <button class=" bg-white hover:bg-[rgba(255,255,255,0.801)] active:bg-[rgba(120,144,156,0.128)]" id="main-area" (click)="addToDisplay('5')">5</button>
+        <button class=" bg-white hover:bg-[rgba(255,255,255,0.801)] active:bg-[rgba(120,144,156,0.128)]" id="main-area" (click)="addToDisplay('6')">6</button>
+        <button id="actions" class="bg-[rgb(228,233,236)] hover:bg-[rgba(228,233,236,0.183)] active:bg-[rgba(120,144,156,0.525)]" (click)="addToDisplay('*')">x</button>
+        <button class=" bg-white hover:bg-[rgba(255,255,255,0.801)] active:bg-[rgba(120,144,156,0.128)]" id="main-area" (click)="addToDisplay('1')">1</button>
+        <button class=" bg-white hover:bg-[rgba(255,255,255,0.801)] active:bg-[rgba(120,144,156,0.128)]" id="main-area" (click)="addToDisplay('2')">2</button>
+        <button class=" bg-white hover:bg-[rgba(255,255,255,0.801)] active:bg-[rgba(120,144,156,0.128)]" id="main-area" (click)="addToDisplay('3')">3</button>
+        <button id="actions" class="bg-[rgb(228,233,236)] hover:bg-[rgba(228,233,236,0.183)] active:bg-[rgba(120,144,156,0.525)]" (click)="addToDisplay('-')">-</button>
+        <button class=" bg-white hover:bg-[rgba(255,255,255,0.801)] active:bg-[rgba(120,144,156,0.128)]" id="main-area" (click)="addToDisplay('0')">0</button>
+        <button class=" bg-white hover:bg-[rgba(255,255,255,0.801)] active:bg-[rgba(120,144,156,0.128)]" id="main-area" (click)="addToDisplay('.')">.</button>
+        <button class=" bg-[rgb(255,101,103)]" id="equal" (click)="calculate()">=</button>
+        <button id="actions" class="bg-[rgb(228,233,236)] hover:bg-[rgba(228,233,236,0.183)] active:bg-[rgba(120,144,156,0.525)]" (click)="addToDisplay('+')">+</button>
+        </div>
+    </div>
+    <div id="confetti-container"></div>
+</div>
