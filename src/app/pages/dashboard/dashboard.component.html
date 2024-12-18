@@ -12,16 +12,22 @@
         </p>
         <div class="flex flex-col gap-8 justify-center items-center">
           <p class="dark:text-white text-justify font-mono cursor-default w-[500px]">Welcome to my portfolio, here you will find a couple of challenges made along with <a>ICodeThis</a>, and also little projects created to practice and learn new frameworks. I hope you appreciate the work you will find here, thanks for taking a look!</p>
-          <div class="flex flex-row justify-between w-[500px]">
-            <a [routerLink]="['/challenges']" class="dark:text-black text-white dark:hover:text-[#F2E205] hover:text-[#F229C3] dark:bg-[#F2E205] bg-[#F229C3] dark:hover:bg-black hover:bg-white dark:border-[#F2E205] border-[#F229C3] border-solid border-4 px-3 py-2 rounded-lg font-mono font-semibold">Challenges</a>
-            <a href="https://leetcode.com/u/GiselleLopes/" target="_blank" class="flex flex-row dark:text-white dark:hover:text-[#F2E205] hover:text-[#F229C3] hover:underline transform transition duration-300 font-mono font-semibold px-3 py-2 gap-2">
-              <img src="/assets/icons/leetcode.svg" alt="LeetCode icon" class="dark:bg-[#F2E205] bg-[#F229C3] p-1 rounded-full w-8 h-8"/>
-              <p class="mt-1">LeetCode</p>
-            </a>
-            <a href="https://github.com/Giselle10Gisa" target="_blank" class="flex flex-row dark:text-white dark:hover:text-[#F2E205] hover:text-[#F229C3] transform transition duration-300 font-mono font-semibold px-3 py-2 gap-2">
-              <i class="pi pi-github dark:text-[#F2E205] text-[#F229C3]" style="font-size: 32px;"></i>
-              <p class="mt-1 hover:underline">Github</p>
-            </a>
+          <div class="flex flex-col w-[500px] gap-8">
+            <div class="flex flex-row justify-between">
+              <a href="https://leetcode.com/u/GiselleLopes/" target="_blank" class="flex flex-row dark:text-white dark:hover:text-[#F2E205] hover:text-[#F229C3] hover:underline transform transition duration-300 font-mono font-semibold px-3 py-2 gap-2">
+                <img src="/assets/icons/leetcode.svg" alt="LeetCode icon" class="dark:bg-[#F2E205] bg-[#F229C3] p-1 rounded-full w-8 h-8"/>
+                <p class="mt-1">LeetCode</p>
+              </a>
+              <a href="https://github.com/Giselle10Gisa" target="_blank" class="flex flex-row dark:text-white dark:hover:text-[#F2E205] hover:text-[#F229C3] transform transition duration-300 font-mono font-semibold px-3 py-2 gap-2">
+                <i class="pi pi-github dark:text-[#F2E205] text-[#F229C3]" style="font-size: 32px;"></i>
+                <p class="mt-1 hover:underline">Github</p>
+              </a>
+              <a href="https://www.linkedin.com/in/giselle-machado-lopes-82a045262" target="_blank" class="flex flex-row dark:text-white dark:hover:text-[#F2E205] hover:text-[#F229C3] transform transition duration-300 font-mono font-semibold px-3 py-2 gap-2">
+                <i class="pi pi-linkedin dark:text-[#F2E205] text-[#F229C3]" style="font-size: 32px;"></i>
+                <p class="mt-1 hover:underline">Linkedin</p>
+              </a>
+            </div>
+            <a [routerLink]="['/challenges']" class="dark:text-black text-white dark:hover:text-[#F2E205] hover:text-[#F229C3] dark:bg-[#F2E205] bg-[#F229C3] dark:hover:bg-black hover:bg-white dark:border-[#F2E205] border-[#F229C3] border-solid border-4 px-3 py-2 rounded-lg font-mono font-semibold text-center">Challenges</a>
           </div>
         </div>
       </div>
