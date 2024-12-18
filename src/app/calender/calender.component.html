@@ -1,0 +1,35 @@
+<div class="div flex justify-center items-center min-h-screen overflow-hidden bg-no-repeat bg-center bg-cover">
+    <div class="container inline-block rounded-[35px] py-0 px-[1em] mt-[2em] w-[600px]">
+        <div class="calender">
+            <header class="m-5 flex justify-between items-center p-[10px]">
+                <pre class="left p-[10px] m-0 cursor-pointer text-[1.2rem]">◀</pre>
+                <div class="header-display flex items-center">
+                    <p class="display m-[5px] text-[1.2rem] tracking-[0.5rem]">""</p>
+                </div>
+                <pre class="right p-[10px] m-0 cursor-pointer text-[1.2rem]">▶</pre>
+            </header>
+
+            <div class="week-days">
+                <div class="week grid grid-cols-7 gap-[10px] m-auto py-0 px-5 justify-between">
+                    <div class="font-bold cursor-default">Su</div>
+                    <div class="font-bold cursor-default">Mo</div>
+                    <div class="font-bold cursor-default">Tu</div>
+                    <div class="font-bold cursor-default">We</div>
+                    <div class="font-bold cursor-default">Th</div>
+                    <div class="font-bold cursor-default">Fr</div>
+                    <div class="font-bold cursor-default">Sa</div>
+                </div>
+                <div class="days grid grid-cols-7 gap-[10px] m-auto py-0 px-5 justify-between"></div>
+            </div>
+        </div>
+        <div class="display-selected p-5 text-center">
+            <p class="selected font-bold mb-[20px] mt-[5px]"></p>
+            <div class="event-description gap-5">
+                <input placeholder="Adicionar evento" type="text" class="typed-event text-black p-[5px]">
+                <button (click)="addEvent()" class="add-button font-bold">Add</button>
+            </div>
+            <div class="event flex font-semibold justify-start items-start mt-[15px]"></div>
+        </div>
+    </div>
+    <div id="confetti-container"></div>
+</div>

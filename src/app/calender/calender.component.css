@@ -1,0 +1,107 @@
+
+:root {
+    --white: #fff;
+    --main: #eaedf0;
+    --accent-2: #ebedf0;
+    --background-days: #fff;
+    --accent: #0041ff;
+    --background: #fff;
+    --font: #000000;
+    --font-2: #000000;
+    --arrow-hover: #000000;
+    --bg-img: "";
+    --button-display: none;
+    --input-display: none;
+}
+
+.div {
+    background-image: var(--bg-img);
+}
+
+.container {
+    background: var(--background);
+}
+
+.week-days {
+    background: var(--background-days);
+}
+
+header {
+    background-color: var(--background);
+}
+
+.header-display p {
+    color: var(--accent);
+}
+
+pre {
+    color: var(--accent);
+}
+
+pre:hover {
+    color: var(--arrow-hover)
+}
+
+.week div,
+.days div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3em;
+    border-radius: 100%;
+}
+
+.days div:hover {
+    background: var(--accent-2);
+    color: var(--font-2);
+    cursor: pointer;
+}
+
+.week div {
+    color: var(--font);
+}
+
+.current-date {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+.event-description {
+    display: var(--input-display);
+}
+
+.typed-event {
+    background-color: var(--accent);
+}
+
+.event-description {
+    display: var(--input-display);
+}
+
+.add-button {
+    color: var(--font);
+}
+
+.add-button:hover {
+    color: var(--accent-2);
+}
+
+.event {
+    color: var(--font);
+}
+
+.confetti {
+    position: absolute;
+    animation: confetti-fall linear 5s infinite;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100%) rotate(0);
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(180deg);
+    }
+}
