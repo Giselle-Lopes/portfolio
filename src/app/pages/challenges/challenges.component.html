@@ -1,28 +1,24 @@
-<p-carousel
-    [value]="challenges"
-    [numVisible]="3"
-    [numScroll]="3"
-    [circular]="false"
-    [responsiveOptions]=""
->
-    <ng-template let-product #item>
-        <div class="border border-surface rounded-border m-2 p-4">
-            <div class="mb-4">
-                <div class="relative mx-auto">
-                    <img
-                        src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}"
-                        [alt]="product.name"
-                        class="w-full rounded-border" />
+<div class="h-screen w-full flex justify-center items-center dark:bg-black">
+    <p-carousel
+        [value]="challenges"
+        [numVisible]="3"
+        [numScroll]="3"
+        [circular]="true"
+    >
+        <ng-template let-challenge #item>
+            <div (click)="navigateToChallenge(challenge.route)" class="h-[500px] cursor-pointer border border-surface border-[#F229C3] dark:border-[#F2E205] rounded-border m-2 p-4">
+                <div class="mb-4">
+                    <div class="relative mx-auto">
+                        <img
+                            src="{{ challenge.preview }}"
+                            [alt]="challenge.name"
+                            class="object-cover w-full h-[400px] rounded-border" />
+                    </div>
+                </div>
+                <div class="mb-4 font-medium font-mono dark:text-white">
+                    {{ challenge.name }}
                 </div>
             </div>
-            <div class="mb-4 font-medium">
-                {{ product.name }}
-            </div>
-            <div class="flex justify-between items-center">
-                <div class="mt-0 font-semibold text-xl">
-                    {{ '$' + product.price }}
-                </div>
-            </div>
-        </div>
-    </ng-template>
-</p-carousel>
+        </ng-template>
+    </p-carousel>
+</div>
