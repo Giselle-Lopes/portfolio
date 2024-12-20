@@ -1,4 +1,7 @@
 <div class="flex justify-center items-center h-screen overflow-hidden" id="body">
+    <div class="cursor-pointer absolute top-[90px] left-5 text-[#F229C3] hover:text-[#AE1C8C] dark:text-[#F2E205] dark:hover:text-[#AEA41C] transition-all transform duration-300 text-3xl" [routerLink]="['/challenges']">
+        <i class="pi pi-arrow-circle-left"></i>
+    </div>
     <div class="shadow-custom">
         <div id="display" class="h-[100px] w-[205px] p-[10px]">
         <input id="calculation" class="text-white opacity-40 cursor-default bg-transparent w-[185px] mb-[10px] text-end" [(ngModel)]="calculationDisplay" readonly>

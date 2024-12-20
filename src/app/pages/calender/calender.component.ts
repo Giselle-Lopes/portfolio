@@ -1,9 +1,10 @@
 import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-calender',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './calender.component.html',
   styleUrl: './calender.component.css'
 })

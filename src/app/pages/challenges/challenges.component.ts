@@ -41,6 +41,8 @@ export class ChallengesComponent {
 
   constructor(private router: Router) {}
 
+  responsiveOptions: any[] | undefined;
+
   navigateToChallenge(route: string) {
     this.router.navigate([route]);
   };

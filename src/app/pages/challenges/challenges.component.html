@@ -4,6 +4,8 @@
         [numVisible]="3"
         [numScroll]="3"
         [circular]="true"
+        [responsiveOptions]="responsiveOptions"
+        autoplayInterval="3000"
     >
         <ng-template let-challenge #item>
             <div (click)="navigateToChallenge(challenge.route)" class="h-[500px] cursor-pointer border border-surface border-[#F229C3] dark:border-[#F2E205] rounded-border m-2 p-4">

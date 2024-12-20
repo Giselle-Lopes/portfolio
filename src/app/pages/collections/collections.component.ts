@@ -1,5 +1,6 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 interface Picture {
   main: string;
@@ -11,7 +12,7 @@ interface Picture {
 @Component({
   selector: 'app-collections',
   standalone: true,
-  imports: [NgFor, NgIf, NgClass],
+  imports: [NgFor, NgIf, NgClass, RouterLink],
   templateUrl: './collections.component.html'
 })
 export class CollectionsComponent {
