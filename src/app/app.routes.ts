@@ -4,11 +4,13 @@ import { ChallengesComponent } from './pages/challenges/challenges.component';
 import { CalculatorComponent } from './pages/calculator/calculator.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CalenderComponent } from './calender/calender.component';
+import { CollectionsComponent } from './pages/collections/collections.component';
 
 export const routes: Routes = [
     { path: '', component: DashboardComponent },
     { path: 'challenges', component: ChallengesComponent },
     { path: 'challenges/calculator', component: CalculatorComponent },
     { path: 'challenges/404', component: NotFoundComponent },
-    { path: 'challenges/calender', component: CalenderComponent }
+    { path: 'challenges/calender', component: CalenderComponent },
+    { path: 'challenges/collections', component: CollectionsComponent }
 ];
