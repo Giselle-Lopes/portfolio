@@ -2,13 +2,13 @@ import { Component, ElementRef, Renderer2 } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-calender',
+  selector: 'app-calendar',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './calender.component.html',
-  styleUrl: './calender.component.css'
+  templateUrl: './calendar.component.html',
+  styleUrl: './calendar.component.css'
 })
-export class CalenderComponent {
+export class CalendarComponent {
   private currentDate = new Date();
   private currentYear = this.currentDate.getFullYear();
   private currentMonth = this.currentDate.getMonth();
@@ -31,7 +31,7 @@ export class CalenderComponent {
     }
   }
 
-  private displayCalender() {
+  private displayCalendar() {
     const display = this.el.nativeElement.querySelector('.display');
     const days = this.el.nativeElement.querySelector('.days');
 
@@ -181,7 +181,7 @@ export class CalenderComponent {
       this.currentMonth = 11;
       this.currentYear--;
     }
-    this.updateCalender();
+    this.updateCalendar();
   }
 
   private nextMonth() {
@@ -190,12 +190,12 @@ export class CalenderComponent {
       this.currentMonth = 0;
       this.currentYear++;
     }
-    this.updateCalender();
+    this.updateCalendar();
     let currentEmoji = this.getEmojiByMonth();
     this.showConfetti(currentEmoji);
   }
 
-  private updateCalender() {
+  private updateCalendar() {
     const days = this.el.nativeElement.querySelector('.days');
     const selected = this.el.nativeElement.querySelector('.selected');
 
@@ -204,7 +204,7 @@ export class CalenderComponent {
     document.documentElement.style.setProperty('--button-display', 'none');
     document.documentElement.style.setProperty('--input-display', 'none');
 
-    this.displayCalender();
+    this.displayCalendar();
     this.displaySelected();
     this.setColors();
   }
@@ -322,7 +322,7 @@ export class CalenderComponent {
     previous.addEventListener('click', () => this.previousMonth());
     next.addEventListener('click', () => this.nextMonth());
     
-    this.displayCalender();
+    this.displayCalendar();
     this.displaySelected();
   }
 }

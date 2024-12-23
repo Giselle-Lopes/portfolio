@@ -23,9 +23,9 @@ export class ChallengesComponent {
       'route': '/challenges/calculator'
     },
     {
-      'name': 'Calender',
-      'preview': '/assets/challenges/calender.png',
-      'route': '/challenges/calender'
+      'name': 'Calendar',
+      'preview': '/assets/challenges/calendar.png',
+      'route': '/challenges/calendar'
     },
     {
       'name': '404 Error Page',
