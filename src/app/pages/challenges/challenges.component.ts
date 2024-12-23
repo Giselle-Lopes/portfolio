@@ -1,6 +1,6 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { Carousel } from 'primeng/carousel';
 
 interface Challenges {
@@ -12,7 +12,7 @@ interface Challenges {
 @Component({
   selector: 'app-challenges',
   standalone: true,
-  imports: [Carousel, NgFor],
+  imports: [Carousel, NgFor, RouterLink],
   templateUrl: './challenges.component.html'
 })
 export class ChallengesComponent {
